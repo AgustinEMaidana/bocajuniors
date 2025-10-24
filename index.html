@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Atlético Boca Juniors - Sitio Oficial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Boca Juniors</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#partidos">Partidos</a></li>
+                <li><a href="#posicion">Tabla</a></li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Club Atlético Boca Juniors</h2>
+                <p>El Xeneize - La Mitad Más Uno</p>
+                <button class="cta-button" onclick="scrollToSection('partidos')">Ver Partidos</button>
+            </div>
+            <div class="hero-image" style="background-image: url('imagenes/bocaformacion.webp'); background-size: cover; background-position: center; border-radius: 15px;">
+            </div>
+        </section>
+
+        <!-- Últimos Resultados -->
+        <section id="partidos" class="matches-section">
+            <h2>Últimos Resultados de Boca</h2>
+            <div class="matches-container">
+                <div class="match-card recent">
+                    <div class="match-header">
+                        <span class="match-date">20 Oct 2025</span>
+                        <span class="match-status">FINALIZADO</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team home">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23003f7f'/%3E%3Ctext x='25' y='30' text-anchor='middle' fill='%23FFD700' font-size='14' font-weight='bold'%3EBJ%3C/text%3E%3C/svg%3E" alt="Boca Juniors">
+                            <span>Boca Juniors</span>
+                        </div>
+                        <div class="score">2 - 2</div>
+                        <div class="team away">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23000000'/%3E%3Ctext x='25' y='30' text-anchor='middle' fill='white' font-size='12' font-weight='bold'%3ECCSDE%3C/text%3E%3C/svg%3E" alt="Central Córdoba">
+                            <span>Central Córdoba (SdE)</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <p><strong>Torneo Clausura - La Bombonera</strong></p>
+                        <p>⚽ Goles: Battaglia, Merentiel</p>
+                    </div>
+                </div>
+
+                <div class="match-card recent">
+                    <div class="match-header">
+                        <span class="match-date">16 Oct 2025</span>
+                        <span class="match-status defeat">DERROTA</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team home">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23FFD700'/%3E%3Ctext x='25' y='30' text-anchor='middle' fill='%23006600' font-size='14' font-weight='bold'%3EDJ%3C/text%3E%3C/svg%3E" alt="Defensa y Justicia">
+                            <span>Defensa y Justicia</span>
+                        </div>
+                        <div class="score">2 - 0</div>
+                        <div class="team away">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23003f7f'/%3E%3Ctext x='25' y='30' text-anchor='middle' fill='%23FFD700' font-size='14' font-weight='bold'%3EBJ%3C/text%3E%3C/svg%3E" alt="Boca Juniors">
+                            <span>Boca Juniors</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <p><strong>Torneo Clausura - Estadio Norberto Tomaghello</strong></p>
+                        <p>Goles: Osorio (x2)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 40px;">Próximos Partidos</h2>
+            <div class="matches-container">
+                <div class="match-card featured">
+                    <div class="match-header">
+                        <span class="match-date">27 Oct 2025</span>
+                        <span class="match-time">16:00</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team home">
+                            <img src="imagenes/barracasescudo.png" alt="Barracas Central">
+                            <span>Barracas Central</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team away">
+                            <img src="imagenes/boca.png" alt="Boca Juniors">
+                            <span>Boca Juniors</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <p><strong>Liga Profesional - Estadio Claudio Tapia</strong></p>
+                        <p>TV: ESPN Premium</p>
+                    </div>
+                    <button class="ticket-btn" onclick="buyTicket('barracas-boca')">Comprar Entradas</button>
+                </div>
+
+                <div class="match-card">
+                    <div class="match-header">
+                        <span class="match-date">2 Nov 2025</span>
+                        <span class="match-time">Por confirmar</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team home">
+                            <img src="imagenes/estudiantesescudo.svg" alt="Estudiantes">
+                            <span>Estudiantes</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team away">
+                            <img src="imagenes/boca.png" alt="Boca Juniors">
+                            <span>Boca Juniors</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <p><strong>Liga Profesional - Estadio Jorge Luis Hirschi</strong></p>
+                    </div>
+                    <button class="ticket-btn" onclick="buyTicket('estudiantes-boca')">Comprar Entradas</button>
+                </div>
+
+                <div class="match-card superclasico">
+                    <div class="match-header">
+                        <span class="match-date">9 Nov 2025</span>
+                        <span class="match-time">Por confirmar</span>
+                        <span class="badge">SUPERCLÁSICO</span>
+                    </div>
+                    <div class="teams">
+                        <div class="team home">
+                            <img src="imagenes/boca.png" alt="Boca Juniors">
+                            <span>Boca Juniors</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team away">
+                            <img src="imagenes/riberescuclado.png" alt="River Plate">
+                            <span>River Plate</span>
+                        </div>
+                    </div>
+                    <div class="match-info">
+                        <p><strong>Liga Profesional - Estadio Alberto J. Armando (La Bombonera)</strong></p>
+                        <p>🏆 El clásico más importante del fútbol argentino</p>
+                    </div>
+                    <button class="ticket-btn" onclick="buyTicket('boca-river')">Comprar Entradas</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Posición en la Tabla -->
+        <section id="posicion" class="stats-section">
+            <h2>Posición en el Torneo Clausura 2025</h2>
+            <div class="table-info">
+                <div class="position-card">
+                    <h3>Situación Actual</h3>
+                    <p class="position-text">Boca se encuentra actualmente <strong>fuera de los playoffs</strong> y clasificaría a la <strong>Copa Sudamericana 2026</strong> por la tabla anual.</p>
+                    <p class="position-text">El equipo dirigido por <strong>Claudio Úbeda</strong> busca sumar puntos en los partidos restantes para asegurar su clasificación a la Copa Libertadores 2026.</p>
+                </div>
+            </div>
+            
+            <h3 style="text-align: center; margin-top: 40px;">Palmarés del Club</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">74</div>
+                    <div class="stat-label">Títulos Oficiales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">35</div>
+                    <div class="stat-label">Ligas Argentinas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Copas Libertadores</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Copas Intercontinentales</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historia del Club -->
+        <section id="historia" class="history-section">
+            <h2>Historia de Boca Juniors</h2>
+            <div class="history-content">
+                <div class="history-intro">
+                    <h3>Fundación y Orígenes</h3>
+                    <p>El <strong>Club Atlético Boca Juniors</strong> fue fundado el <strong>3 de abril de 1905</strong> por seis jóvenes vecinos del barrio de La Boca en Buenos Aires. Su nombre hace honor al barrio donde nació, y sus colores azul y oro fueron elegidos según la leyenda, por la bandera de un barco sueco que ingresaba al puerto.</p>
+                    
+                    <h3>La Bombonera - El Templo del Fútbol</h3>
+                    <p>El <strong>Estadio Alberto J. Armando</strong>, conocido mundialmente como <strong>"La Bombonera"</strong>, es el hogar de Boca desde 1940. Ubicado en el barrio de La Boca, este mítico estadio tiene capacidad para 54.000 espectadores y es considerado uno de los estadios más emblemáticos del mundo por su atmósfera única y su arquitectura característica.</p>
+                </div>
+
+                <div class="legends">
+                    <h3>Leyendas del Club</h3>
+                    <div class="legends-grid">
+                        <div class="legend-card">
+                            <h4>Diego Armando Maradona</h4>
+                            <p>El más grande de todos los tiempos. Jugó en Boca en dos etapas (1981-1982 y 1995-1997) y es considerado el símbolo del club.</p>
+                        </div>
+                        <div class="legend-card">
+                            <h4>Juan Román Riquelme</h4>
+                            <p>El último 10 verdadero del fútbol mundial. Ídolo absoluto y actual vicepresidente del club. Ganó la Libertadores 2007 como capitán.</p>
+                        </div>
+                        <div class="legend-card">
+                            <h4>Martín Palermo</h4>
+                            <p>El máximo goleador histórico de Boca con 236 goles. "El Titán" es uno de los ídolos más queridos de la historia xeneize.</p>
+                        </div>
+                        <div class="legend-card">
+                            <h4>Carlos Tevez</h4>
+                            <p>"El Apache" brilló en Boca en tres etapas diferentes, ganando múltiples títulos y siendo figura fundamental del equipo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievements">
+                    <h3>Logros Destacados</h3>
+                    <ul class="achievements-list">
+                        <li><strong>35 Campeonatos de Primera División</strong> - El segundo club con más títulos en Argentina</li>
+                        <li><strong>6 Copas Libertadores</strong> (1977, 1978, 2000, 2001, 2003, 2007) - Entre los más ganadores de América</li>
+                        <li><strong>3 Copas Intercontinentales</strong> (1977, 2000, 2003) - Campeón mundial de clubes</li>
+                        <li><strong>4 Copas Sudamericanas</strong> - Máximo ganador del torneo</li>
+                        <li><strong>2 Recopa Sudamericanas</strong></li>
+                        <li><strong>1 Copa Master CONMEBOL</strong></li>
+                        <li><strong>1 Copa de Oro</strong></li>
+                    </ul>
+                </div>
+
+                <div class="current-squad">
+                    <h3>Plantel Actual 2025</h3>
+                    <p><strong>Director Técnico:</strong> Claudio Úbeda</p>
+                    <p><strong>Presidente:</strong> Juan Román Riquelme</p>
+                    <p><strong>Figuras destacadas:</strong> Edinson Cavani, Leandro Paredes, Ander Herrera, Miguel Merentiel, Luis Advíncula, Milton Delgado</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Noticias -->
+        <section id="noticias" class="news-section">
+            <h2>Últimas Noticias de Boca</h2>
+            <div class="news-container">
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('imagenes/superclasico.jpg'); background-size: cover; background-position: center;"></div>
+                    <div class="news-content">
+                        <h3>Superclásico en La Bombonera: Boca Recibe a River</h3>
+                        <p>El 9 de noviembre se vivirá una nueva edición del clásico más grande del fútbol argentino. Boca buscará una victoria clave en su estadio para acercarse a la clasificación a la Copa Libertadores 2026.</p>
+                        <span class="news-date">24 Oct 2025</span>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('imagenes/Bataglia.webp'); background-size: cover; background-position: center;"></div>
+                    <div class="news-content">
+                        <h3>Battaglia se Desgarró y No Jugará ante Barracas</h3>
+                        <p>Baja sensible para Boca: Rodrigo Battaglia sufrió un desgarro en el entrenamiento y se perderá el crucial partido ante Barracas Central y probablemente el Superclásico. Úbeda deberá buscar reemplazante entre Herrera, Alarcón y Belmonte.</p>
+                        <span class="news-date">23 Oct 2025</span>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('imagenes/anderparedes.jpeg'); background-size: cover; background-position: center;"></div>
+                    <div class="news-content">
+                        <h3>La Dupla del PSG en Boca: Ander Herrera y Leandro Paredes</h3>
+                        <p>Claudio Úbeda planea repetir en Boca la sociedad que Ander Herrera y Leandro Paredes formaron en el mediocampo del PSG. Ambos llegaron este año al Xeneize y buscan darle equilibrio al equipo en los partidos decisivos.</p>
+                        <span class="news-date">23 Oct 2025</span>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('imagenes/libertadores.jpg '); background-size: cover; background-position: center;"></div>
+                    <div class="news-content">
+                        <h3>¿Cuántos Puntos Necesita Boca para la Libertadores?</h3>
+                        <p>Boca está actualmente fuera de los playoffs pero clasificaría a la Copa Sudamericana 2026 por tabla anual. El equipo necesita sumar puntos en los partidos restantes ante Barracas, Estudiantes, River y Tigre para asegurar su lugar en la Libertadores.</p>
+                        <span class="news-date">22 Oct 2025</span>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('imagenes/cavani.png'); background-size: cover; background-position: center;"></div>
+                    <div class="news-content">
+                        <h3>Cavani: Duda para el Partido ante Barracas</h3>
+                        <p>El Matador entrenó diferenciado por 37° día consecutivo. Su presencia ante Barracas Central peligra, aunque el cuerpo técnico espera contar con él para el Superclásico ante River del 9 de noviembre.</p>
+                        <span class="news-date">22 Oct 2025</span>
+                    </div>
+                </article>
+                
+                <article class="news-card">
+                    <div class="news-image" style="background-image: url('imagenes/bocacentralcordoba.jpeg'); background-size: cover; background-position: center;"></div>
+                    <div class="news-content">
+                        <h3>Empate Agridulce: Boca 2-2 con Central Córdoba</h3>
+                        <p>En La Bombonera, Boca empató 2-2 con Central Córdoba en un partido que dejó sensaciones encontradas. Battaglia y Merentiel marcaron para el Xeneize, pero no alcanzó para sumar de a tres en casa.</p>
+                        <span class="news-date">20 Oct 2025</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contact-section">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>📧 info@bocajuniors.com.ar</p>
+                    <p>📱 +54 11 4309-4700</p>
+                    <p>📍 Brandsen 805, La Boca, Buenos Aires, Argentina</p>
+                </div>
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <input type="text" id="name" placeholder="Nombre" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Club Atlético Boca Juniors</h3>
+                <p>El club más grande de Argentina y uno de los más exitosos del mundo. Desde 1905 representando la pasión del barrio de La Boca.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#partidos">Partidos</a></li>
+                    <li><a href="#posicion">Tabla</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales Oficiales</h3>
+                <div class="social-links">
+                    <a href="#" onclick="openSocial('twitter')">Twitter/X</a>
+                    <a href="#" onclick="openSocial('facebook')">Facebook</a>
+                    <a href="#" onclick="openSocial('instagram')">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Club Atlético Boca Juniors. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
